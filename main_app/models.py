@@ -4,6 +4,6 @@ from django.db import models
 
 class Chimp(models.Model):
     name = models.CharField(max_length=100)
-    weight = models.IntegerField
+    weight = models.IntegerField()
     description = models.TextField(max_length=250)
     age = models.IntegerField()

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Chimp Details</h1>
+
+<div class="card">
+    <dive class="card-content">
+        <span class="card-title">{{ chimp.name }}</span>
+        <p>Weight {{ chimp.weight }}.lbs</p>
+        <p>Description: {{ chimp.description }}</p>
+        <p>Age: {{ chimp.age }}</p>
+    </dive>
+</div>
+
+{% endblock %}

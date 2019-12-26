@@ -5,6 +5,7 @@
 
 {% for chimp in chimps %}
     <div class="card">
+        <a href="/chimps/{{ chimp.id }}"
         <div class="card-content">
             <span class="card-title">{{ chimp.name }}</span>
             <p>{{ chimp.weight }}.lbs</p>
@@ -15,6 +16,7 @@
                 <p>Age: Chimpitten</p>
             {% endif %}
         </div>
+    </a>
     </div>
 
 {% endfor %}
