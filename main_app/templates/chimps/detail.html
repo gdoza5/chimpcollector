@@ -4,12 +4,16 @@
 <h1>Chimp Details</h1>
 
 <div class="card">
-    <dive class="card-content">
+    <div class="card-content">
         <span class="card-title">{{ chimp.name }}</span>
         <p>Weight {{ chimp.weight }}.lbs</p>
         <p>Description: {{ chimp.description }}</p>
         <p>Age: {{ chimp.age }}</p>
-    </dive>
+    </div>
+    <div class="card-action">
+        <a href="{% url 'chimps_update' chimp.id %}">Edit</a>
+        <a href="{% url 'chimps_delete' chimp.id %}">Delete</a>
+    </div>
 </div>
 
 {% endblock %}
